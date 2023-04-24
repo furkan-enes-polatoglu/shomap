@@ -23,7 +23,7 @@ usage: python3 pyphisher.py [IP]
  
  ### Requirements
 
-  shodan==0.7.1
+  -'shodan==0.7.1'
   nmap==0.6.1
   requests==2.26.0
   beautifulsoup4==4.9.3
