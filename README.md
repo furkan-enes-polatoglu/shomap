@@ -23,7 +23,10 @@ usage: python3 pyphisher.py [IP]
  
  ### Requirements
 
- - `Python(3)`
-   - `requests`
-   - `bs4`
-   - `rich`
+  shodan==0.7.1
+  nmap==0.6.1
+  requests==2.26.0
+  beautifulsoup4==4.9.3
+  pyfiglet==0.8.post1
+  termcolor==1.1.0
+
