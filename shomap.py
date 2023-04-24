@@ -23,27 +23,25 @@ colored_err = colored(err, color='red')
 success = "[+]"
 colored_success = colored(success, color='yellow')
 
-# Shodan API anahtarınızı buraya girin
+
 SHODAN_API_KEY = "SHODAN_API_KEY"
 
-# IP adresi
 ip = sys.argv[1]
 
 print("\n\n"+colored_info + ' IP: {}'.format(ip))
 
-# Shodan nesnesini oluşturun
 api = shodan.Shodan(SHODAN_API_KEY)
 
-# Shodan'a sorgu gönderin
+
 try:
     results = api.host(ip)
 
-    # Açık portları yazdırın
+    
     for port in results['ports']:
         print("---------------------------------------------------------")
         print(colored_info + ' Port: {}'.format(port))
         
-        # Nmap taraması yapın
+        
         nm = nmap.PortScanner()
         nm.scan(ip, str(port))
         print(colored_info + " Port is " +  nm[ip]['tcp'][port]['state'])
@@ -55,14 +53,14 @@ try:
             print(colored_err + ' Product: Not found')
         print(colored_info + ' Version: {}'.format(version))
 
-        # Google araması yapın
+     
         query = '{} {} exploit-db'.format(product, version)
         url = 'https://www.google.com/search?q={}'.format(query)
         headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'}
         res = requests.get(url, headers=headers)
         soup = BeautifulSoup(res.text, 'html.parser')
 
-        # Exploit-DB URL'sini alın
+       
         exploit_db_url = None
         for link in soup.find_all('a'):
             href = link.get('href')
@@ -70,7 +68,7 @@ try:
                 exploit_db_url = href
                 break
 
-        # Sonuçları yazdırın
+        
         if exploit_db_url:
             print(colored_success + ' Exploit-DB URL: {}'.format(exploit_db_url))
         else:
