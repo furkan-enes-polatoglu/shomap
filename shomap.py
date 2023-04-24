@@ -24,7 +24,7 @@ success = "[+]"
 colored_success = colored(success, color='yellow')
 
 # Shodan API anahtarınızı buraya girin
-SHODAN_API_KEY = "a9tXOqFppFe5aOSkzOstr0E7yDXE32Fp"
+SHODAN_API_KEY = "SHODAN_API_KEY"
 
 # IP adresi
 ip = sys.argv[1]
