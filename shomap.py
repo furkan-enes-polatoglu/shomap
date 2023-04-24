@@ -24,7 +24,7 @@ success = "[+]"
 colored_success = colored(success, color='yellow')
 
 
-SHODAN_API_KEY = "SHODAN_API_KEY"
+SHODAN_API_KEY = input('Enter your SHODAN API KEY:')
 
 ip = sys.argv[1]
 
