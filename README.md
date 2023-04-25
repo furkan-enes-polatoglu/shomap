@@ -1,7 +1,7 @@
 <h1 align="center">shomap</h1>
 
 <p align="center">
-  <img src="https://i.hizliresim.com/o73aqmy.jpg">
+  <img width=%65 src="https://i.hizliresim.com/o73aqmy.jpg">
 </p>
 
 
