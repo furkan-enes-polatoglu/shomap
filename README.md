@@ -12,7 +12,7 @@
 #### Usage
 
 ```
-usage: python3 pyphisher.py [IP]
+usage: python3 shomap.py [IP]
 ```
 ### Features:
 
