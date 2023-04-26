@@ -39,7 +39,9 @@ usage: python3 shomap.py [IP]
  - Easy to use
  - Possible error diagnoser
  - 77 Website templates
- 
+
+<br>
+
  ### Requirements
 <ul>
   <li>shodan==0.7.1 </li>
