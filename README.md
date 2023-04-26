@@ -37,8 +37,7 @@ usage: python3 shomap.py [IP]
 
  - Multi platform (Supports most linux)
  - Easy to use
- - Possible error diagnoser
- - 77 Website templates
+
 
 <br>
 
