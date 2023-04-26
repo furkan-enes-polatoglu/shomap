@@ -9,7 +9,7 @@
 
 
 <p align="center">
-  <img width="670" height="500" src="https://i.hizliresim.com/o73aqmy.jpg">
+  <img width="700" height="500" src="https://i.hizliresim.com/o73aqmy.jpg">
 </p>
 
 
