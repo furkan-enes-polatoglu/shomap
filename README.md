@@ -19,14 +19,14 @@
 
 <br>
 
-#### Installation
+### Installation
 ```
 git clone https://github.com/furkan-enes-polatoglu/shomap.git
 cd shomap
 pip3 install -r requirements.txt
 ```
 
-#### Usage
+### Usage
 
 ```
 usage: python3 shomap.py [IP]
