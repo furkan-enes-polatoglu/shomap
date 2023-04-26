@@ -5,13 +5,15 @@
 </p>
 
 
-### [√] Description :
+### Description :
 
 ***This tool is coded to provide some convenience in external penetration testing. When you enter the IP address, it performs passive scanning on Shodan.io and detects open ports. Then it learns the services running on the server and their versions by performing nmap scanning on open ports. Then, using this information, it tries to find possible exploit codes on Exploit-DB.***
 
-#### Install the Requirements
 
+#### Installation
 ```
+git clone https://github.com/furkan-enes-polatoglu/shomap.git
+cd shomap
 pip3 install -r requirements.txt
 ```
 
